@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "bootstrap",
+      "type": "com.luromila.demo.Userverwaltung",
+      "sourceType": "com.luromila.demo.Userverwaltung"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
