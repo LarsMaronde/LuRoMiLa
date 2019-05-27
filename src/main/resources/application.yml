@@ -3,10 +3,5 @@ server:
 
 eureka:
   client:
-    port: 8888
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
