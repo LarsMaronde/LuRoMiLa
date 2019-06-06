@@ -1,5 +1,8 @@
 package com.onlineshop.warenverwaltung.demo;
 
+import com.onlineshop.warenverwaltung.demo.Produkt.Model.Produkt;
+import com.onlineshop.warenverwaltung.demo.Produkt.Repository.ProduktRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,11 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class WarenverwaltungController {
 
 
-    private final Produkt produkt;
+    @Autowired
+    private ProduktRepository produktRepo;
 
-    public WarenverwaltungController(Produkt produkt) {
-        this.produkt = produkt;
-    }
 
     @RequestMapping("/warenkorb")
     public String hello() {
