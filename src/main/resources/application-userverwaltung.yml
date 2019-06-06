@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Userverwaltung-service
+    port: 8889
+client:
+  port:8890
+server:
+  port:8891
