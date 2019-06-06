@@ -1,69 +1,91 @@
 package com.onlineshop.userverwaltung.demo;
 
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.onlineshop.userverwaltung.demo.account.model.User;
 import com.onlineshop.userverwaltung.demo.account.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.annotation.Bean;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @RestController
 public class UserverwaltungController {
 
     @Autowired
-    protected RestTemplate restTemplate;
-    private String serviceUrl = "http://DEMOB";
-
-    @Autowired
     private UserRepository userRepos;
 
+    @RequestMapping("/")
+    public String getHallo(){
+        return "HallO";
+    }
 
     @RequestMapping("/user")
     public String hello() {
         return "Hello user";
     }
 
+    @ResponseBody
+    @RequestMapping("/create")
+    public String create(String username, String vorname, String nachname, String email, String dateOfBirth, String password){
+        String userId = "";
+        try {
+            Date dob = new SimpleDateFormat("dd/MM/yyyy").parse(dateOfBirth);
+            User user = new User(username, vorname, nachname, email, dob, password);
+            userRepos.save(user);
+            userId = String.valueOf(user.getId());
+        }
+        catch (Exception ex) {
+            return "Error creating the user: " + ex.toString();
+        }
+        return "User succesfully created with id = " + userId;
+    }
 
     @ResponseBody
-    @RequestMapping("/")
-    public String index() {
-        Iterable<User> all = userRepos.findAll();
-        StringBuilder sb = new StringBuilder();
-        all.forEach(p -> sb.append(p.getVorname() + "<br>"));
-        return sb.toString();
+    @RequestMapping("/delete")
+    public String delete(int id){
+        try {
+            userRepos.deleteById(id);
+        } catch (Exception ex) {
+            return "Error deleting the user:" + ex.toString();
+        }
+        return "User succesfully deleted!";
     }
 
-
-
-    //CALLING ANOTHER SERVICE
-
-    @HystrixCommand(fallbackMethod = "callGetServiceFallBack")
-    public String callGetService(int id) {
-        String response = restTemplate.exchange(serviceUrl+"/{id}"
-                , HttpMethod.GET
-                , null
-                , new ParameterizedTypeReference<String>() {}
-                , id).getBody();
-        return response;
+    @ResponseBody
+    @RequestMapping("get-by-email")
+    public String getByEmail(String email) {
+        String userId = "";
+        try {
+            User user = userRepos.findByEmail(email);
+            userId = String.valueOf(user.getId());
+        }
+        catch (Exception ex) {
+            return "User not found";
+        }
+        return "The user id is: " + userId;
     }
 
-    @LoadBalanced
-    @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder builder) {
-        return builder.build();
-    }
+    @ResponseBody
+    @RequestMapping("/update")
+    public String updateUser(int id, String username, String vorname, String nachname, String email, String dateOfBirth, String password){
+        try{
+            User user = userRepos.findById(id);
+            user.setUsername(username);
+            user.setVorname(vorname);
+            user.setNachname(nachname);
+            user.setEmail(email);
+            Date dob = new SimpleDateFormat("dd/MM/yyyy").parse(dateOfBirth);
+            user.setDateOfBirth(dob);
+            user.setPassword(password);
+            userRepos.save(user);
 
-    public String callGetServiceFallBack(int id) {
-        String response = "Fall back response get : " + id;
-        return response;
+        }catch(Exception ex){
+            return "Error updating"+ex.toString();
+        }
+        return "User updated successfully";
     }
 
 }

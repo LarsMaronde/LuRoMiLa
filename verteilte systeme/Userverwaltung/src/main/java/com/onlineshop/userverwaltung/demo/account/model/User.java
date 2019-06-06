@@ -29,6 +29,15 @@ public class User {
 
     public User(){/*empty*/}
 
+    public User(String username, String vorname, String nachname, String email, Date dateOfBirth, String password) {
+        this.username = username;
+        this.vorname = vorname;
+        this.nachname = nachname;
+        this.email = email;
+        this.dateOfBirth = dateOfBirth;
+        this.password = password;
+    }
+
     public int getId() {
         return id;
     }
