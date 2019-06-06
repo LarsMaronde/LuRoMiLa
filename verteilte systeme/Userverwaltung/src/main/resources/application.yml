@@ -9,3 +9,14 @@ server:
 spring:
   application:
     name: Userverwaltung-service
+  jpa:
+    hibernate:
+      dll-auto: update
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 12345
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
