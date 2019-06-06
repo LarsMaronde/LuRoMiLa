@@ -1,9 +1,10 @@
 package com.onlineshop.userverwaltung.demo;
 
-
+import com.netflix.discovery.EurekaClient;
 import com.onlineshop.userverwaltung.demo.account.model.User;
 import com.onlineshop.userverwaltung.demo.account.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,8 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@EnableEurekaClient
 @RestController
 public class UserverwaltungController {
+
+    @Autowired
+    private EurekaClient discoveryClient;
 
     @Autowired
     private UserRepository userRepos;

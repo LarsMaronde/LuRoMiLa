@@ -20,6 +20,11 @@ public class WarenverwaltungController {
         return "warenkorb";
     }
 
+    @RequestMapping("/error")
+    public String error() {
+        return "fuck you";
+    }
+
     @ResponseBody
     @RequestMapping("/create")
     public String create(String name, int artikelnummer, float preis){
