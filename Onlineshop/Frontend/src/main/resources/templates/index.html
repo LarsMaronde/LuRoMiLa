@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Onlineshop</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<style th:inline="text">
+
+    body{
+        background-color: mistyrose;
+    }
+    h1{
+        text-align: center;
+        font-size: 30pt;
+        font-family: Castellar
+    }
+    h2{
+        text-align: center;
+        font-size: 20pt;
+        font-family: Castellar;
+    }
+    .Inhalt{
+        margin-left: 500px;
+        margin-top: 100px;
+    }
+    .button{
+        font-size: 40px;
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .tabelle{
+        text-align: center;
+    }
+
+
+</style>
+<body>
+    <h1> LuRoMiLa</h1>
+    <h2> Willkommen in unserem Onlineshop!</h2>
+    <div class="Inhalt">
+        <table class="tabelle">
+            <tr>
+            <button class="button"> Login</button> <br> <br>
+            </tr>
+            <tr>
+            <button class="button"> Registrieren </button>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
