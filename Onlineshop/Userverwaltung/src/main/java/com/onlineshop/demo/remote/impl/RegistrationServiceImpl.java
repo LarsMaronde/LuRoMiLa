@@ -35,8 +35,20 @@ public class RegistrationServiceImpl implements RegistrationService {
         return repository.findById(uid).get();
     }
 
+
     @Override
     public void delete(User user) {
         repository.delete(user);
+    }
+
+
+    @Override
+    public User updateUser(User user) {
+        return repository.save(user);
+    }
+
+    @Override
+    public User findUserByUsername(String username){
+        return repository.findUserByUsername(username);
     }
 }

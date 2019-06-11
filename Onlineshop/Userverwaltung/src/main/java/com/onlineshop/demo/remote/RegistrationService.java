@@ -8,16 +8,16 @@ import java.util.List;
 
 public interface RegistrationService {
 
-    //save user
-    public User createUser(User user);
+    User createUser(User user);
 
-    //search all users
-    public List<User> findAll();
+    List<User> findAll();
 
-    //get one
-    public User findOne(Long uid);
+    User findOne(Long uid);
 
-    //delete an user
-    public void delete(User user);
+    void delete(User user);
+
+    User updateUser(User user);
+
+    User findUserByUsername(String username);
 
 }

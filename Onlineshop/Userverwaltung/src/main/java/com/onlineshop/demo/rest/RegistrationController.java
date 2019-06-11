@@ -16,19 +16,21 @@ public class RegistrationController {
         this.registrationService = registrationService;
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+
     @PostMapping("user")
     public User createUser(@RequestBody User user){
         return this.registrationService.createUser(user);
     }
 
-    @GetMapping("/users")
+
+    @GetMapping("users")
     public List<User> getAllUsers(){
         return registrationService.findAll();
     }
 
+
     //delete an user
-    @DeleteMapping("/users/{id}")
+    @DeleteMapping("users/{id}")
     public ResponseEntity<User> deleteUser(@PathVariable(value = "id") Long userid){
 
         User user = registrationService.findOne(userid);
@@ -42,7 +44,7 @@ public class RegistrationController {
     }
 
 
-    @GetMapping("/users/{id}")
+    @GetMapping("users/{id}")
     public ResponseEntity<User> getUserById(@PathVariable(value = "id") Long userid){
         User user = registrationService.findOne(userid);
 
@@ -52,5 +54,15 @@ public class RegistrationController {
         return ResponseEntity.ok().body(user);
     }
 
+
+    @PutMapping("users")
+    public User updateUser(@RequestBody User user){
+        return registrationService.updateUser(user);
+    }
+
+    @PutMapping("users/{name}")
+    public User getUserByName(@PathVariable String name){
+        return registrationService.findUserByUsername(name);
+    }
 
 }
