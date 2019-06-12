@@ -1,52 +1,48 @@
 package com.onlineshop.demo.rest;
 
 import com.onlineshop.demo.jpa.entity.User;
-import com.onlineshop.demo.remote.RegistrationService;
+import com.onlineshop.demo.remote.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-public class RegistrationController {
+public class UserController {
 
-    private final RegistrationService registrationService;
+    private final UserService userService;
 
-    public RegistrationController(RegistrationService registrationService) {
-        this.registrationService = registrationService;
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
 
-    @PostMapping("user")
+    @PostMapping("users")
     public User createUser(@RequestBody User user){
-        return this.registrationService.createUser(user);
+        return this.userService.createUser(user);
     }
-
 
     @GetMapping("users")
     public List<User> getAllUsers(){
-        return registrationService.findAll();
+        return userService.findAll();
     }
 
-
-    //delete an user
     @DeleteMapping("users/{id}")
     public ResponseEntity<User> deleteUser(@PathVariable(value = "id") Long userid){
 
-        User user = registrationService.findOne(userid);
+        User user = userService.findOne(userid);
 
         if(user == null){
             return ResponseEntity.notFound().build();
         }
 
-        registrationService.delete(user);
+        userService.delete(user);
         return  ResponseEntity.ok().build();
     }
 
-
     @GetMapping("users/{id}")
     public ResponseEntity<User> getUserById(@PathVariable(value = "id") Long userid){
-        User user = registrationService.findOne(userid);
+        User user = userService.findOne(userid);
 
         if(user == null){
             return ResponseEntity.notFound().build();
@@ -57,12 +53,12 @@ public class RegistrationController {
 
     @PutMapping("users")
     public User updateUser(@RequestBody User user){
-        return registrationService.updateUser(user);
+        return userService.updateUser(user);
     }
 
     @PutMapping("users/{name}")
     public User getUserByName(@PathVariable String name){
-        return registrationService.findUserByUsername(name);
+        return userService.findUserByUsername(name);
     }
 
 }

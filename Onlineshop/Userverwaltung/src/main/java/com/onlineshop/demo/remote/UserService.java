@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface RegistrationService {
+public interface UserService {
 
     User createUser(User user);
 

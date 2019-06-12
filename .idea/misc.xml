@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml" />
         <option value="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml" />
       </list>
     </option>
   </component>
