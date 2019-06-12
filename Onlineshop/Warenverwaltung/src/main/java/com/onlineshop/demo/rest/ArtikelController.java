@@ -54,7 +54,7 @@ public class ArtikelController {
         return artikelService.updateArtikel(artikel);
     }
 
-    @PutMapping("artikel/{name}")
+    @GetMapping("artikel/{name}")
     public Artikel getUserByName(@PathVariable String name){
         return artikelService.findArtikelByName(name);
     }
