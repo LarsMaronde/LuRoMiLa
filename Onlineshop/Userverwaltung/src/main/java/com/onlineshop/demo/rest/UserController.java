@@ -56,9 +56,5 @@ public class UserController {
         return userService.updateUser(user);
     }
 
-    @GetMapping("users/{name}")
-    public User getUserByName(@PathVariable String name){
-        return userService.findUserByUsername(name);
-    }
 
 }

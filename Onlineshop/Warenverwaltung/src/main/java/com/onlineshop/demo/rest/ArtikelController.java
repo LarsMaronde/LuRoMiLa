@@ -54,20 +54,6 @@ public class ArtikelController {
         return artikelService.updateArtikel(artikel);
     }
 
-    @GetMapping("artikel/{name}")
-    public Artikel getUserByName(@PathVariable String name){
-        return artikelService.findArtikelByName(name);
-    }
-
-
-
-
-
-
-
-
-
-
 
 
 }

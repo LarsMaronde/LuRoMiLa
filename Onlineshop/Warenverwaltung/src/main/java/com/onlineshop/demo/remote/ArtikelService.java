@@ -16,9 +16,5 @@ public interface ArtikelService {
 
     Artikel updateArtikel(Artikel artikel);
 
-    Artikel findArtikelByName(String name);
-
-
-
 
 }

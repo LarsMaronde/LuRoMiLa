@@ -9,23 +9,32 @@ import java.util.Date;
 @Entity
 @NoArgsConstructor
 @Data
+@Table(name = "Users")
 public class User {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
+    @Column(name ="id")
     private Long id;
 
+    @Column(name ="username")
     private String username;
+    @Column(name ="vorname")
     private String vorname;
+    @Column(name ="nachname")
     private String nachname;
 
+    @Column(name ="email")
     private String email;
 
+    @Column(name ="dateOfBirth")
     @Temporal(TemporalType.DATE)
     private Date dateOfBirth;
 
+    @Column(name ="password")
     private String password;
 
+    @Column(name ="adresse")
     private String adresse;
 
 

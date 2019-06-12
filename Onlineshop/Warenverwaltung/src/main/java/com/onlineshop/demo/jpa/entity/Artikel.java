@@ -9,16 +9,22 @@ import java.util.Date;
 @Entity
 @NoArgsConstructor
 @Data
+@Table(name="Artikel")
 public class Artikel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Long id;
 
+    @Column(name = "name")
     private String name;
+    @Column(name = "beschreibung")
     private String beschreibung;
+    @Column(name = "preis")
     private float preis;
 
+    @Column(name = "einstellungsdatum")
     @Temporal(TemporalType.DATE)
     private Date einstellungsdatum;
 

@@ -54,18 +54,6 @@ public class UserServiceImpl implements UserService {
         return repository.save(user);
     }
 
-    @HystrixCommand(fallbackMethod = "reliable3")
-    @Override
-    public User findUserByUsername(String username){
-        return repository.findUserByUsername(username);
-    }
-
-    public ResponseEntity<User> reliable() {
-        User user = new User();
-        user.setUsername("default-fallback");
-        return ResponseEntity.ok(user);
-    }
-
 
     public ArrayList<User> reliable2(){
         return new ArrayList<User>();

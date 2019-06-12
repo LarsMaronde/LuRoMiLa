@@ -54,17 +54,6 @@ public class ArtikelServiceImpl implements ArtikelService {
         return repository.save(artikel);
     }
 
-    @Override
-    public Artikel findArtikelByName(String name) {
-        return repository.findArtikelByName(name);
-    }
-
-    public ResponseEntity<Artikel> reliable() {
-        Artikel artikel = new Artikel();
-        artikel.setName("default-fallback");
-        return ResponseEntity.ok(artikel);
-    }
-
 
     public ArrayList<Artikel> reliable2(){
         return new ArrayList<Artikel>();
