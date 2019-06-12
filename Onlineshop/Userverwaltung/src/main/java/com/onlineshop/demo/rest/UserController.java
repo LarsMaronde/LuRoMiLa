@@ -5,6 +5,7 @@ import com.onlineshop.demo.remote.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.core.io.Resource;
 import java.util.List;
 
 @RestController
@@ -55,6 +56,15 @@ public class UserController {
     public ResponseEntity<User> updateUser(@RequestBody User user){
         return userService.updateUser(user);
     }
+
+    //Calling the Warenverwaltung service
+//    @CrossOrigin(origins = "http://localhost:4200")
+//    @GetMapping("users/bestand/{id}")
+//    public Resource getBestand(@PathVariable(value = "id") Long artikelid){
+//        userService.getBestand(artikelid);
+//        return null;
+//    }
+
 
 
 }

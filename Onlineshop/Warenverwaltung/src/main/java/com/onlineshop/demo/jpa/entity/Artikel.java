@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -17,12 +18,20 @@ public class Artikel {
     @Column(name = "id")
     private Long id;
 
+    @NotNull
     @Column(name = "name")
     private String name;
+
     @Column(name = "beschreibung")
     private String beschreibung;
+
+    @NotNull
     @Column(name = "preis")
     private float preis;
+
+    @NotNull
+    @Column(name = "bestand")
+    private int bestand;
 
     @Column(name = "einstellungsdatum")
     @Temporal(TemporalType.DATE)
@@ -69,5 +78,13 @@ public class Artikel {
 
     public void setEinstellungsdatum(Date einstellungsdatum) {
         this.einstellungsdatum = einstellungsdatum;
+    }
+
+    public int getBestand() {
+        return bestand;
+    }
+
+    public void setBestand(int bestand) {
+        this.bestand = bestand;
     }
 }

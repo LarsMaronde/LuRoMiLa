@@ -71,6 +71,11 @@ public class UserServiceImpl implements UserService {
         return ResponseEntity.ok(user);
     }
 
+    public User reliable(){
+        User user = new User();
+        user.setUsername("fallback");
+        return user;
+    }
 
     public ArrayList<User> reliable2(){
         return new ArrayList<User>();

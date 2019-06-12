@@ -3,7 +3,6 @@ package com.onlineshop.demo.remote;
 import com.onlineshop.demo.jpa.entity.User;
 import org.springframework.http.ResponseEntity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface UserService {
@@ -17,6 +16,8 @@ public interface UserService {
     void delete(User user);
 
     ResponseEntity<User> updateUser(User user);
+
+    //Resource getBestand(Long artikelid);
 
 
 }

@@ -55,6 +55,13 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <!-- feign client -->
+        <!-- simplifies REST requests -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
         <!-- pre-processor -->
         <dependency>
             <groupId>org.projectlombok</groupId>

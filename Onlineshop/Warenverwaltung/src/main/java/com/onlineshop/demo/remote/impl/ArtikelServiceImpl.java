@@ -68,6 +68,12 @@ public class ArtikelServiceImpl implements ArtikelService {
         return ResponseEntity.ok(artikel);
     }
 
+    public Artikel reliable(){
+        Artikel artikel = new Artikel();
+        artikel.setName("fallback");
+        return artikel;
+    }
+
 
     public ArrayList<Artikel> reliable2(){
         return new ArrayList<Artikel>();

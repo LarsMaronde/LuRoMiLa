@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -17,23 +18,32 @@ public class User {
     @Column(name ="id")
     private Long id;
 
-    @Column(name ="username")
+    @NotNull
+    @Column(name ="username", unique = true)
     private String username;
+
+    @NotNull
     @Column(name ="vorname")
     private String vorname;
+
+    @NotNull
     @Column(name ="nachname")
     private String nachname;
 
+    @NotNull
     @Column(name ="email")
     private String email;
 
+    @NotNull
     @Column(name ="dateOfBirth")
     @Temporal(TemporalType.DATE)
     private Date dateOfBirth;
 
+    @NotNull
     @Column(name ="password")
     private String password;
 
+    @NotNull
     @Column(name ="adresse")
     private String adresse;
 
