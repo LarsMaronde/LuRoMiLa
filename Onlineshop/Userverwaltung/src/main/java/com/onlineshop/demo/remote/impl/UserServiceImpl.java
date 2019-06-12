@@ -50,8 +50,25 @@ public class UserServiceImpl implements UserService {
 
     @HystrixCommand(fallbackMethod = "reliable3")
     @Override
-    public User updateUser(User user) {
-        return repository.save(user);
+    public ResponseEntity<User> updateUser(User userDetails) {
+
+        User user = repository.findById(userDetails.getId()).get();
+
+        if(user == null){
+            return ResponseEntity.notFound().build();
+        }
+        user.setUsername(userDetails.getUsername());
+        user.setVorname(userDetails.getVorname());
+        user.setNachname(userDetails.getNachname());
+        user.setAdresse(userDetails.getAdresse());
+        user.setDateOfBirth(userDetails.getDateOfBirth());
+        user.setPassword(userDetails.getPassword());
+        user.setEmail(userDetails.getEmail());
+
+        repository.deleteById(user.getId());
+        repository.save(user);
+
+        return ResponseEntity.ok(user);
     }
 
 

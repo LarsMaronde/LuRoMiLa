@@ -50,8 +50,22 @@ public class ArtikelServiceImpl implements ArtikelService {
 
     @HystrixCommand(fallbackMethod = "reliable3")
     @Override
-    public Artikel updateArtikel(Artikel artikel) {
-        return repository.save(artikel);
+    public ResponseEntity<Artikel> updateArtikel(Artikel artikelDetails) {
+
+        Artikel artikel = repository.findById(artikelDetails.getId()).get();
+
+        if(artikel == null){
+            return ResponseEntity.notFound().build();
+        }
+        artikel.setName(artikelDetails.getName());
+        artikel.setBeschreibung(artikelDetails.getBeschreibung());
+        artikel.setEinstellungsdatum(artikelDetails.getEinstellungsdatum());
+        artikel.setPreis(artikelDetails.getPreis());
+
+        repository.deleteById(artikel.getId());
+        repository.save(artikel);
+
+        return ResponseEntity.ok(artikel);
     }
 
 

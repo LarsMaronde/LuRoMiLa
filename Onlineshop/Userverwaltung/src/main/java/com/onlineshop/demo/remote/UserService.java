@@ -16,7 +16,7 @@ public interface UserService {
 
     void delete(User user);
 
-    User updateUser(User user);
+    ResponseEntity<User> updateUser(User user);
 
 
 }

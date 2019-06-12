@@ -1,6 +1,7 @@
 package com.onlineshop.demo.remote;
 
 import com.onlineshop.demo.jpa.entity.Artikel;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ public interface ArtikelService {
 
     void delete(Artikel artikel);
 
-    Artikel updateArtikel(Artikel artikel);
+    ResponseEntity<Artikel> updateArtikel(Artikel artikel);
 
 
 }

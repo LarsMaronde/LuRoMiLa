@@ -50,7 +50,7 @@ public class ArtikelController {
     }
 
     @PutMapping("artikel")
-    public Artikel updateUser(@RequestBody Artikel artikel){
+    public ResponseEntity<Artikel> updateUser(@RequestBody Artikel artikel){
         return artikelService.updateArtikel(artikel);
     }
 
