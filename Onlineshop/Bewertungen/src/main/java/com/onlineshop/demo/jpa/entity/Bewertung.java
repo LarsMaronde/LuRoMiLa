@@ -38,7 +38,7 @@ public class Bewertung {
 
     @NotNull
     @Id
-    @Column(name = "artikelId")
+    @Column(name = "userId")
     private Long userId;
 
     //getters setters

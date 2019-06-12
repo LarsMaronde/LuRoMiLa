@@ -17,7 +17,8 @@ public interface UserService {
 
     ResponseEntity<User> updateUser(User user);
 
-    //Resource getBestand(Long artikelid);
+    //synch rest call to warenverwaltung
+    int getBestand(Long artikelid);
 
 
 }

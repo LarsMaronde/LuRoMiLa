@@ -54,6 +54,11 @@ public class ArtikelController {
         return artikelService.updateArtikel(artikel);
     }
 
+    @GetMapping("users/bestand/{id}")
+    public int getBestand(@PathVariable(value = "id") Long artikelid){
+        return artikelService.findOne(artikelid).getBestand();
+    }
+
 
 
 }

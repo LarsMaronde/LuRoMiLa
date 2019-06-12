@@ -61,6 +61,7 @@ public class ArtikelServiceImpl implements ArtikelService {
         artikel.setBeschreibung(artikelDetails.getBeschreibung());
         artikel.setEinstellungsdatum(artikelDetails.getEinstellungsdatum());
         artikel.setPreis(artikelDetails.getPreis());
+        artikel.setBestand(artikelDetails.getBestand());
 
         repository.deleteById(artikel.getId());
         repository.save(artikel);

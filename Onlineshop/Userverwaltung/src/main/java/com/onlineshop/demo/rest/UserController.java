@@ -58,12 +58,11 @@ public class UserController {
     }
 
     //Calling the Warenverwaltung service
-//    @CrossOrigin(origins = "http://localhost:4200")
-//    @GetMapping("users/bestand/{id}")
-//    public Resource getBestand(@PathVariable(value = "id") Long artikelid){
-//        userService.getBestand(artikelid);
-//        return null;
-//    }
+    @CrossOrigin(origins = "http://localhost:4200")
+    @GetMapping("users/bestand/{id}")
+    public int getBestand(@PathVariable(value = "id") Long artikelid){
+        return userService.getBestand(artikelid);
+    }
 
 
 
