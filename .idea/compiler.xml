@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo (3)" />
         <module name="demo (2)" />
+        <module name="hysterix-dashboard" />
         <module name="demo" />
         <module name="demo (1)" />
       </profile>
@@ -17,6 +18,7 @@
       <module name="demo (1)" target="1.8" />
       <module name="demo (2)" target="1.8" />
       <module name="demo (3)" target="1.8" />
+      <module name="hysterix-dashboard" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,6 +27,7 @@
       <module name="demo (1)" options="-parameters" />
       <module name="demo (2)" options="-parameters" />
       <module name="demo (3)" options="-parameters" />
+      <module name="hysterix-dashboard" options="-parameters" />
     </option>
   </component>
 </project>
