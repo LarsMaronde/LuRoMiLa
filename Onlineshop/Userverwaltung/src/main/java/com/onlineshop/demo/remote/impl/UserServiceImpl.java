@@ -4,6 +4,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.onlineshop.demo.jpa.UserRepository;
 import com.onlineshop.demo.jpa.entity.User;
 import com.onlineshop.demo.remote.UserService;
+import com.onlineshop.demo.remote.rest.BewertungClient;
 import com.onlineshop.demo.remote.rest.WarenverwaltungClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -17,10 +18,13 @@ public class UserServiceImpl implements UserService {
     private final UserRepository repository;
 
     private final WarenverwaltungClient warenverwaltungClient;
+    private final BewertungClient bewertungClient;
 
-    public UserServiceImpl(UserRepository repository, WarenverwaltungClient warenverwaltungClient) {
+    public UserServiceImpl(UserRepository repository, WarenverwaltungClient warenverwaltungClient,
+                           BewertungClient bewertungClient) {
         this.repository = repository;
         this.warenverwaltungClient = warenverwaltungClient;
+        this.bewertungClient = bewertungClient;
     }
 
 
@@ -77,6 +81,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public int getBestand(Long artikelid) {
         return warenverwaltungClient.getBestand(artikelid);
+    }
+
+    @Override
+    public void rateArtikel (Long artikelid, Long userid, int rating, String beschreibung){
+        bewertungClient.rateArtikel(artikelid,userid,rating,beschreibung);
     }
 
     //resiliance fallback

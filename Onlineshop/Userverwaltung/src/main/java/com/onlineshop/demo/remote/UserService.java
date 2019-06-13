@@ -17,8 +17,10 @@ public interface UserService {
 
     ResponseEntity<User> updateUser(User user);
 
-    //synch rest call to warenverwaltung
+    //synch rest call to Warenverwaltung service
     int getBestand(Long artikelid);
 
+    //one-way call to Bewertung service
+    void rateArtikel (Long artikelid, Long userid, int rating, String beschreibung);
 
 }

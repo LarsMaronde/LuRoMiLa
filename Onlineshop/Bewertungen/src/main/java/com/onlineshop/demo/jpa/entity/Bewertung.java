@@ -8,14 +8,24 @@ import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
-@NoArgsConstructor
 @Data
 @Table(name = "Bewertung")
 public class Bewertung {
 
+    public Bewertung() {
+        /*empty*/
+    }
+
+    public Bewertung(@NotNull int rating, @NotNull String ratingText, @NotNull Long artikelId, @NotNull Long userId) {
+        this.rating = rating;
+        this.ratingText = ratingText;
+        this.artikelId = artikelId;
+        this.userId = userId;
+        this.ratedAt = new Date();
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
     private Long id;
 
     @NotNull
@@ -32,12 +42,10 @@ public class Bewertung {
     private String ratingText;
 
     @NotNull
-    @Id
     @Column(name = "artikelId")
     private Long artikelId;
 
     @NotNull
-    @Id
     @Column(name = "userId")
     private Long userId;
 

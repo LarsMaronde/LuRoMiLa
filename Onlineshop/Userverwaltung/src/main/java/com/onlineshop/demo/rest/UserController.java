@@ -5,7 +5,6 @@ import com.onlineshop.demo.remote.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import org.springframework.core.io.Resource;
 import java.util.List;
 
 @RestController
@@ -62,6 +61,17 @@ public class UserController {
     @GetMapping("users/bestand/{id}")
     public int getBestand(@PathVariable(value = "id") Long artikelid){
         return userService.getBestand(artikelid);
+    }
+
+    //calling the Bewertung service
+    @CrossOrigin(origins = "http://localhost:4200")
+    @PostMapping("users/bewertung/{artikelid}/{userid}/{rating}/{beschreibung}")
+    public void rateArtikel(@PathVariable(value = "artikelid") Long artikelid,
+                            @PathVariable(value = "userid") Long userid,
+                            @PathVariable(value = "rating") int rating,
+                            @PathVariable(value = "beschreibung") String beschreibung){
+        System.out.println("eingegangene anfrage");
+        userService.rateArtikel(artikelid,userid,rating,beschreibung);
     }
 
 

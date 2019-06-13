@@ -17,5 +17,7 @@ public interface BewertungService {
 
     ResponseEntity<Bewertung> updateBewertung(Bewertung bewertung);
 
+    void rateArtikel (Long artikelid, Long userid, int rating, String beschreibung);
+
 
 }

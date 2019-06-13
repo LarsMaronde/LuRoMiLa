@@ -56,5 +56,12 @@ public class BewertungController {
         return bewertungService.updateBewertung(bewertung);
     }
 
+    @PostMapping("users/bewertung/{artikelid}/{userid}/{rating}/{beschreibung}")
+    public void rateArtikel(@PathVariable(value = "artikelid") Long artikelid,
+                     @PathVariable(value = "userid") Long userid,
+                     @PathVariable(value = "rating") int rating,
+                     @PathVariable(value = "beschreibung") String beschreibung){
+        bewertungService.rateArtikel(artikelid,userid,rating,beschreibung);
+    }
 
 }

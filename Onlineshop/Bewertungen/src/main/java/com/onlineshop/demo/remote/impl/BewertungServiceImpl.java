@@ -72,9 +72,19 @@ public class BewertungServiceImpl implements BewertungService {
         return ResponseEntity.ok(bewertung);
     }
 
+
+    @Override
+    public void rateArtikel(Long artikelid, Long userid, int rating, String beschreibung) {
+        Bewertung b = new Bewertung(rating, beschreibung,artikelid,userid);
+        repository.save(b);
+    }
+
+
+
     public Bewertung reliable(){
         Bewertung bewertung = new Bewertung();
         bewertung.setRating(0);
+        bewertung.setRatingText("default fallback");
         return bewertung;
     }
 
