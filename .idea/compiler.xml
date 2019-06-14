@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo (3)" />
-        <module name="demo (2)" />
-        <module name="hysterix-dashboard" />
         <module name="demo" />
+        <module name="demo (4)" />
+        <module name="demo (5)" />
+        <module name="hysterix-dashboard" />
         <module name="demo (1)" />
+        <module name="demo (2)" />
+        <module name="demo (3)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +20,8 @@
       <module name="demo (1)" target="1.8" />
       <module name="demo (2)" target="1.8" />
       <module name="demo (3)" target="1.8" />
+      <module name="demo (4)" target="1.8" />
+      <module name="demo (5)" target="1.8" />
       <module name="hysterix-dashboard" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -27,6 +31,8 @@
       <module name="demo (1)" options="-parameters" />
       <module name="demo (2)" options="-parameters" />
       <module name="demo (3)" options="-parameters" />
+      <module name="demo (4)" options="-parameters" />
+      <module name="demo (5)" options="-parameters" />
       <module name="hysterix-dashboard" options="-parameters" />
     </option>
   </component>

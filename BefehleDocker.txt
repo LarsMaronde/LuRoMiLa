@@ -1,0 +1,14 @@
+mvn install clean
+oder 
+mvn install
+
+In IntelliJ:
+docker build -t userverwaltung-service .
+
+docker run -it --rm -d -P --name <Container-Name> <Jar file>
+
+docker ps
+
+Über diese IP Aufrufen
+
+http://192.168.99.100:<Port von docker ps übertragen>

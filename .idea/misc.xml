@@ -6,13 +6,15 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml" />
-        <option value="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml" />
-        <option value="$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml" />
-        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/pom.xml" />
         <option value="$PROJECT_DIR$/hysterix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/hysterix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="12" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8.0_162" project-jdk-type="JavaSDK" />
 </project>

@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c688438f-7a9f-447a-8ccf-de6751b8bf91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Onlineshop/Bewertungen/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/kubernetes/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Onlineshop/Userverwaltung/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Onlineshop/Warenverwaltung/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Onlineshop/hysterix-dashboard/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Onlineshop/Bewertungen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Onlineshop/Bewertungen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Onlineshop/hysterix-dashboard/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Onlineshop/hysterix-dashboard/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/Onlineshop/Warenverwaltung/target/" />
+    <ignored path="$PROJECT_DIR$/Onlineshop/Userverwaltung/target/" />
+    <ignored path="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/target/" />
+    <ignored path="$PROJECT_DIR$/Onlineshop/Bewertungen/target/" />
+    <ignored path="$PROJECT_DIR$/Onlineshop/target/" />
+    <ignored path="$PROJECT_DIR$/Onlineshop/hysterix-dashboard/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/ServiceDiscovery/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2007">
+              <caret line="98" column="53" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/src/main/java/com/onlineshop/demo/WarenverwaltungApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/ServiceDiscovery/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Onlineshop/Warenverwaltung/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/BewertungenApplication.java" />
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/remote/impl/BewertungServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/remote/BewertungService.java" />
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/jpa/entity/Bewertung.java" />
+        <option value="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/Dockerfile" />
+        <option value="$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Onlineshop/Userverwaltung/Dockerfile" />
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/Dockerfile" />
+        <option value="$PROJECT_DIR$/Onlineshop/Bewertungen/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/hysterix-dashboard/Dockerfile" />
+        <option value="$PROJECT_DIR$/Onlineshop/hysterix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/Warenverwaltung/src/main/java/com/onlineshop/demo/WarenverwaltungApplication.java" />
+        <option value="$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml" />
+        <option value="$PROJECT_DIR$/Onlineshop/Warenverwaltung/Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Bewertungen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Bewertungen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Bewertungen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Bewertungen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Bewertungen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Bewertungen" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="hysterix-dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="hysterix-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="hysterix-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="hysterix-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceDiscovery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceDiscovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceDiscovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceDiscovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceDiscovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceDiscovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceDiscovery" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Userverwaltung" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Userverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Userverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Userverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Userverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Userverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Warenverwaltung" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Warenverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Warenverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuRoMiLa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuRoMiLa" type="462c0819:PsiDirectoryNode" />
+              <item name="Onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Warenverwaltung" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Onlineshop/Warenverwaltung" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lukas\git\LuRoMiLa\Onlineshop\Warenverwaltung" />
+      <recent name="C:\Users\Lukas\git\LuRoMiLa\Onlineshop\hysterix-dashboard" />
+      <recent name="C:\Users\Lukas\git\LuRoMiLa\Onlineshop\Userverwaltung" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.Userverwaltung/Dockerfile">
+    <configuration name="BewertungenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlineshop.demo.BewertungenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HysterixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo (4)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlineshop.demo.HysterixDashboardApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceDiscorveryApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo (2)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onlineshop.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlineshop.demo.ServiceDiscorveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceDiscorveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onlineshop.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlineshop.demo.ServiceDiscorveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserverwaltungApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo (3)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onlineshop.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlineshop.demo.UserverwaltungApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserverwaltungApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo (2)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onlineshop.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlineshop.demo.UserverwaltungApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarenverwaltungApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo (4)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlineshop.demo.WarenverwaltungApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Userverwaltung/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Onlineshop/Userverwaltung/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Userverwaltung/Dockerfile" />
+        <item itemvalue="Spring Boot.UserverwaltungApplication (1)" />
+        <item itemvalue="Spring Boot.ServiceDiscorveryApplication (1)" />
+        <item itemvalue="Spring Boot.ServiceDiscorveryApplication" />
+        <item itemvalue="Spring Boot.UserverwaltungApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c688438f-7a9f-447a-8ccf-de6751b8bf91" name="Default Changelist" comment="" />
+      <created>1560348179039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560348179039</updated>
+      <workItem from="1560348182716" duration="2772000" />
+      <workItem from="1560424489196" duration="256000" />
+      <workItem from="1560424746967" duration="4694000" />
+      <workItem from="1560434990839" duration="11247000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18969000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3531961" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/resources/application-mysql.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.5.RELEASE/spring-boot-dependencies-2.1.5.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="1131" column="6" selection-start-line="1131" selection-start-column="6" selection-end-line="1131" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/jpa/BewertungRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/remote/impl/BewertungServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/java/com/onlineshop/demo/jpa/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/remote/BewertungService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/java/com/onlineshop/demo/remote/rest/WarenverwaltungClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/java/com/onlineshop/demo/remote/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/rest/BewertungController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/jpa/entity/Bewertung.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/java/com/onlineshop/demo/jpa/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/java/com/onlineshop/demo/BewertungenApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/ServiceDiscovery/src/main/java/com/onlineshop/demo/ServiceDiscorveryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/java/com/onlineshop/demo/UserverwaltungApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/hysterix-dashboard/src/main/java/com/onlineshop/demo/HysterixDashboardApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="91" column="21" selection-start-line="91" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Bewertungen/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/hysterix-dashboard/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/hysterix-dashboard/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/hysterix-dashboard/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/ServiceDiscovery/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/ServiceDiscovery/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/src/main/java/com/onlineshop/demo/WarenverwaltungApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2007">
+          <caret line="98" column="53" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Warenverwaltung/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/ServiceDiscovery/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Onlineshop/Userverwaltung/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
