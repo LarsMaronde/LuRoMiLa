@@ -42,13 +42,13 @@ public class ArtikelServiceImpl implements ArtikelService {
         return repository.findById(aid).get();
     }
 
-    @HystrixCommand(fallbackMethod = "reliable3")
+
     @Override
     public void delete(Artikel artikel) {
         repository.delete(artikel);
     }
 
-    @HystrixCommand(fallbackMethod = "reliable3")
+    @HystrixCommand(fallbackMethod = "reliable4")
     @Override
     public ResponseEntity<Artikel> updateArtikel(Artikel artikelDetails) {
 
@@ -69,18 +69,27 @@ public class ArtikelServiceImpl implements ArtikelService {
         return ResponseEntity.ok(artikel);
     }
 
-    public Artikel reliable(){
-        Artikel artikel = new Artikel();
-        artikel.setName("fallback");
-        return artikel;
+
+
+    //resilience fallback
+
+    public Artikel reliable(Artikel artikel){
+        Artikel artikel1 = new Artikel();
+        artikel1.setName("default fallback");
+        return artikel1;
     }
 
-
-    public ArrayList<Artikel> reliable2(){
+    public List<Artikel> reliable2(){
         return new ArrayList<Artikel>();
     }
 
-    public ResponseEntity<Artikel> reliable3(){
+    public Artikel reliable3(Long id){
+        Artikel a = new Artikel();
+        a.setName("default fallback");
+        return a;
+    }
+
+    public ResponseEntity<Artikel> reliable4(Artikel artikel){
         return ResponseEntity.notFound().build();
     }
 }
