@@ -70,7 +70,6 @@ public class UserController {
                             @PathVariable(value = "userid") Long userid,
                             @PathVariable(value = "rating") int rating,
                             @PathVariable(value = "beschreibung") String beschreibung){
-        System.out.println("eingegangene anfrage");
         userService.rateArtikel(artikelid,userid,rating,beschreibung);
     }
 

@@ -49,13 +49,13 @@ public class UserServiceImpl implements UserService {
         return repository.findById(uid).get();
     }
 
-    @HystrixCommand(fallbackMethod = "reliable3")
+
     @Override
     public void delete(User user) {
         repository.delete(user);
     }
 
-    @HystrixCommand(fallbackMethod = "reliable3")
+    @HystrixCommand(fallbackMethod = "reliable4")
     @Override
     public ResponseEntity<User> updateUser(User userDetails) {
 
@@ -78,6 +78,7 @@ public class UserServiceImpl implements UserService {
         return ResponseEntity.ok(user);
     }
 
+    @HystrixCommand(fallbackMethod = "reliable5")
     @Override
     public int getBestand(Long artikelid) {
         return warenverwaltungClient.getBestand(artikelid);
@@ -88,20 +89,31 @@ public class UserServiceImpl implements UserService {
         bewertungClient.rateArtikel(artikelid,userid,rating,beschreibung);
     }
 
-    //resiliance fallback
 
-    public User reliable(){
-        User user = new User();
-        user.setUsername("fallback");
-        return user;
+    //resilience fallback
+
+    public User reliable(User user){
+        User user1 = new User();
+        user1.setUsername("default fallback");
+        return user1;
     }
 
-    public ArrayList<User> reliable2(){
+    public List<User> reliable2(){
         return new ArrayList<User>();
     }
 
-    public ResponseEntity<User> reliable3(){
+    public User reliable3(Long id){
+        User u = new User();
+        u.setUsername("default fallback");
+        return u;
+    }
+
+    public ResponseEntity<User> reliable4(User user){
         return ResponseEntity.notFound().build();
+    }
+
+    public int reliable5(Long id){
+        return -1;
     }
 
 

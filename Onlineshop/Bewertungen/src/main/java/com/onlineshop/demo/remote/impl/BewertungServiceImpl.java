@@ -4,7 +4,6 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.onlineshop.demo.jpa.BewertungRepository;
 import com.onlineshop.demo.jpa.entity.Bewertung;
 import com.onlineshop.demo.remote.BewertungService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -44,13 +43,12 @@ public class BewertungServiceImpl implements BewertungService {
         return repository.findById(uid).get();
     }
 
-    @HystrixCommand(fallbackMethod = "reliable3")
     @Override
     public void delete(Bewertung bewertung) {
         repository.delete(bewertung);
     }
 
-    @HystrixCommand(fallbackMethod = "reliable3")
+    @HystrixCommand(fallbackMethod = "reliable4")
     @Override
     public ResponseEntity<Bewertung> updateBewertung(Bewertung bewertungDetails) {
 
@@ -79,20 +77,26 @@ public class BewertungServiceImpl implements BewertungService {
         repository.save(b);
     }
 
+    //resilience fallback
 
-
-    public Bewertung reliable(){
-        Bewertung bewertung = new Bewertung();
-        bewertung.setRating(0);
-        bewertung.setRatingText("default fallback");
-        return bewertung;
+    public Bewertung reliable(Bewertung bewertung){
+        Bewertung bewertung1 = new Bewertung();
+        bewertung1.setRating(0);
+        bewertung1.setRatingText("default fallback");
+        return bewertung1;
     }
 
-    public ArrayList<Bewertung> reliable2(){
+    public List<Bewertung> reliable2(){
         return new ArrayList<Bewertung>();
     }
 
-    public ResponseEntity<Bewertung> reliable3(){
+    public Bewertung reliable3(Long id){
+        Bewertung b = new Bewertung();
+        b.setRatingText("default fallback");
+        return b;
+    }
+
+    public ResponseEntity<Bewertung> reliable4(Bewertung bewertung){
         return ResponseEntity.notFound().build();
     }
 
